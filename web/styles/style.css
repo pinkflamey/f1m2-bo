@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+    background-color: lightslategray;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    background-color: lightgray;
+}
+
+.image-top {
+    background-image: url("https://placekitten.com/1920/1080");
+    height: 100vh;
+    max-height: 1080px;
+}
+.section-2 {
+    padding: 80px;
+    margin: 40px;
+    background-color: rgb(40, 87, 133);
+}
+.section-3 {
+    padding: 80px;
+    margin: 40px;
+    background-color: rgb(40, 87, 133);;
+}
+
+.image-top h1 {
+    padding-left: 80px;
+    margin-left: 40px;
+    padding-top: 130px;
+    margin-bottom: 0px;
+
+    font-size: 500%;
+}
+.image-top h2 {
+    padding-left: 80px;
+    margin-left: 40px;
+    margin-top: 0px;
+
+
+    font-size: 400%;
+}
+
+
+
+.tts-paragraph {
+    float: left;
+
+    max-width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.tts-image {
+    max-width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.review-paragraph {
+    float: left;
+    max-width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.review-image {
+    max-width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}

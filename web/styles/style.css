@@ -38,8 +38,8 @@ nav a {
     color: white;
 }
 .active-link {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    background-color: white;
+    border: 5px solid white;
     border-radius: 2px;
     color: black;
 }
@@ -109,4 +109,52 @@ main {
     max-width: 40%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    nav li {
+        display: inline;
+        margin-right: 10px;
+        color: white;
+        font-size: 20px;
+    }
+    nav ul {
+        margin-left: 20px;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 550px) {
+    nav li {
+        display: block;
+        margin-right: 0px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    nav ul {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        height: 140px;
+    }
 }

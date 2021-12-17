@@ -9,25 +9,39 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    height: 80px;
 }
 
-nav > ul {
-    list-style: none;
-    margin: 0px;
-    margin-left: 40px;
-    padding: 0px;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+
+header > .logo {
+    width: 80px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
+
 nav li {
     display: inline;
-    padding-left: 80px;
-    font-size: 140%;
+    margin-right: 40px;
+    color: white;
+    font-size: 20px;
 }
-header > img {
-    width: 4vw;
-    height: auto;
-    margin-left: 50vw;
+nav ul {
+    margin-left: 80px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.active-link {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 2px;
+    color: black;
 }
 
 /*-------------------------------------*/
@@ -57,6 +71,7 @@ main {
     margin-left: 40px;
     padding-top: 130px;
     margin-bottom: 0px;
+    margin-top: 0px;
 
     font-size: 500%;
 }
@@ -94,4 +109,52 @@ main {
     max-width: 40%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    nav li {
+        display: inline;
+        margin-right: 10px;
+        color: white;
+        font-size: 20px;
+    }
+    nav ul {
+        margin-left: 20px;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 550px) {
+    nav li {
+        display: block;
+        margin-right: 0px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    nav ul {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        height: 140px;
+    }
 }

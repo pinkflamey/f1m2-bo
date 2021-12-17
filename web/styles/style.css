@@ -55,15 +55,37 @@ main {
     height: 100vh;
     max-height: 1080px;
 }
+
 .section-2 {
     padding: 80px;
     margin: 40px;
     background-color: rgb(40, 87, 133);
 }
+.tts-wrapper {
+    display: flex;
+}
+.section-2  p {
+    max-width: 50%;
+    margin-right: 20px;
+}
+.section-2  img {
+    max-width: 40%;
+}
+
 .section-3 {
     padding: 80px;
     margin: 40px;
-    background-color: rgb(40, 87, 133);;
+    background-color: rgb(40, 87, 133);
+}
+.rev-wrapper {
+    display: flex;
+}
+.section-3  p {
+    max-width: 50%;
+    margin-right: 20px;
+}
+.section-3  img {
+    max-width: 40%;
 }
 
 .image-top h1 {
@@ -86,32 +108,9 @@ main {
 
 
 
-.tts-paragraph {
-    float: left;
 
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
+@media screen and (max-width: 1000px) {
 }
-.tts-image {
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.review-paragraph {
-    float: left;
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.review-image {
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-
 
 @media screen and (max-width: 750px) {
     nav li {
@@ -132,6 +131,45 @@ main {
         top: 0;
         right: 0;
         height: 80px;
+    }
+
+
+
+    .image-top {
+        background-image: url("https://placekitten.com/1920/1080");
+        height: 100vh;
+        max-height: 1080px;
+    }
+    .section-2 {
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(40, 87, 133);
+    }
+    .section-2 p {
+        margin: 0px;
+    }
+    .section-3 {
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(40, 87, 133);;
+    }
+    
+    .image-top h1 {
+        padding-left: 40px;
+        margin-left: 20px;
+        padding-top: 130px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+        font-size: 500%;
+    }
+    .image-top h2 {
+        padding-left: 40px;
+        margin-left: 20px;
+        margin-top: 0px;
+    
+    
+        font-size: 400%;
     }
 }
 @media screen and (max-width: 550px) {

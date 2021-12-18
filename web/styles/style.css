@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     background-color: lightslategray;
+    font-size: 150%;
 }
 
 /* Header and navigation styling */
@@ -55,15 +56,39 @@ main {
     height: 100vh;
     max-height: 1080px;
 }
+
 .section-2 {
     padding: 80px;
     margin: 40px;
     background-color: rgb(40, 87, 133);
 }
+.tts-wrapper {
+    display: flex;
+}
+.section-2  p {
+    max-width: 50%;
+    margin-right: 20px;
+}
+.section-2  img {
+    max-width: 50%;
+    height: auto;
+}
+
 .section-3 {
     padding: 80px;
     margin: 40px;
-    background-color: rgb(40, 87, 133);;
+    background-color: rgb(40, 87, 133);
+}
+.rev-wrapper {
+    display: flex;
+}
+.section-3  p {
+    max-width: 50%;
+    margin-right: 20px;
+}
+.section-3  img {
+    max-width: 40%;
+    height: auto;
 }
 
 .image-top h1 {
@@ -86,30 +111,6 @@ main {
 
 
 
-.tts-paragraph {
-    float: left;
-
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.tts-image {
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.review-paragraph {
-    float: left;
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.review-image {
-    max-width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
 
 
@@ -132,6 +133,56 @@ main {
         top: 0;
         right: 0;
         height: 80px;
+    }
+
+
+
+    .image-top {
+        background-image: url("https://placekitten.com/1920/1080");
+        height: 100vh;
+        max-height: 1080px;
+    }
+
+    .tts-wrapper {
+        display: inline;
+    }
+    .section-2 {
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(40, 87, 133);
+    }
+    .section-2  p {
+        margin: 0px;
+        max-width: 100%;
+        margin-right: 20px;
+    }
+    .section-2  img {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .section-3 {
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(40, 87, 133);;
+    }
+    
+    .image-top h1 {
+        padding-left: 40px;
+        margin-left: 20px;
+        padding-top: 130px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+        font-size: 500%;
+    }
+    .image-top h2 {
+        padding-left: 40px;
+        margin-left: 20px;
+        margin-top: 0px;
+    
+    
+        font-size: 400%;
     }
 }
 @media screen and (max-width: 550px) {
@@ -156,5 +207,23 @@ main {
         top: 0;
         right: 0;
         height: 140px;
+    }
+
+    .image-top h1 {
+        padding-left: 20px;
+        margin-left: 20px;
+        padding-top: 130px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+        font-size: 430%;
+    }
+    .image-top h2 {
+        padding-left: 20px;
+        margin-left: 20px;
+        margin-top: 0px;
+    
+    
+        font-size: 330%;
     }
 }

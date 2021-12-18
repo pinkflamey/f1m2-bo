@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     background-color: lightslategray;
+    font-size: 150%;
 }
 
 /* Header and navigation styling */
@@ -69,7 +70,8 @@ main {
     margin-right: 20px;
 }
 .section-2  img {
-    max-width: 40%;
+    max-width: 50%;
+    height: auto;
 }
 
 .section-3 {
@@ -86,6 +88,7 @@ main {
 }
 .section-3  img {
     max-width: 40%;
+    height: auto;
 }
 
 .image-top h1 {
@@ -109,8 +112,7 @@ main {
 
 
 
-@media screen and (max-width: 1000px) {
-}
+
 
 @media screen and (max-width: 750px) {
     nav li {
@@ -140,13 +142,24 @@ main {
         height: 100vh;
         max-height: 1080px;
     }
+
+    .tts-wrapper {
+        display: inline;
+    }
     .section-2 {
         padding: 20px;
         margin: 20px;
         background-color: rgb(40, 87, 133);
     }
-    .section-2 p {
+    .section-2  p {
         margin: 0px;
+        max-width: 100%;
+        margin-right: 20px;
+    }
+    .section-2  img {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
     }
     .section-3 {
         padding: 20px;
@@ -194,5 +207,23 @@ main {
         top: 0;
         right: 0;
         height: 140px;
+    }
+
+    .image-top h1 {
+        padding-left: 20px;
+        margin-left: 20px;
+        padding-top: 130px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+        font-size: 430%;
+    }
+    .image-top h2 {
+        padding-left: 20px;
+        margin-left: 20px;
+        margin-top: 0px;
+    
+    
+        font-size: 330%;
     }
 }

@@ -48,7 +48,7 @@ nav a {
 /*-------------------------------------*/
 
 main {
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
 }
 
 .image-top {
@@ -75,7 +75,7 @@ main {
 }
 
 .section {
-    background-color: lightgreen;
+    background-color: lightgray;
     padding: 0 20px 20px 20px;
     margin: 20px 20px 0px 20px;
 }

@@ -98,7 +98,6 @@ h1 {
 @media screen and (max-width: 950px) {
 
     .section {
-        background-color: lightgreen;
         padding: 0 20px 20px 20px;
         margin: 20px 20px 0px 20px;
     }
@@ -161,7 +160,6 @@ h1 {
     }
 
     .section {
-        background-color: lightgreen;
         padding: 0 20px 20px 20px;
         margin: 20px 20px 0px 20px;
     }
@@ -221,7 +219,6 @@ h1 {
     }
 
     .section {
-        background-color: lightgreen;
         padding: 0 10px 10px 10px;
         margin: 10px 10px 0px 10px;
     }

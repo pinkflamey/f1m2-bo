@@ -55,9 +55,11 @@
         <div class="section">
 
             <h1>Huidige tentoonstellingen</h1>
+            <h2 id="tts-title">De 4 Katten</h2>
 
-            <div class="section-inside">
-                <p>
+            <div class="section-inside" id="tentoonstellingen">
+
+                <p id="tts-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Erat velit scelerisque in dictum non consectetur a erat nam. 
@@ -65,7 +67,17 @@
                     Cras pulvinar mattis nunc sed blandit libero volutpat sed cras.
                 </p>
 
-                <img class="default" src="https://placekitten.com/500/300">
+                <img class="default" src="https://placekitten.com/500/300" id="tts-image">
+
+            </div>
+
+            <div id="tts-selector">
+                <button id="slider-left" onclick="changeExhibition(0)">
+                    <
+                </button>
+                <button id="slider-right" onclick="changeExhibition(1)">
+                    >
+                </button>
             </div>
 
         </div>
@@ -92,6 +104,8 @@
 
     </main>
     
+    <script src="scripts/slider.js"></script>
+
 </body>
 
 </html>

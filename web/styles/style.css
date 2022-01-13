@@ -16,8 +16,6 @@ header {
     right: 0;
     height: 80px;
 }
-
-
 header > .logo {
     width: 80px;
     position: fixed;
@@ -25,19 +23,34 @@ header > .logo {
     right: 20px;
 }
 
-nav li {
-    display: inline;
+nav {
+    height: 100%;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 0 60px;
+}
+
+nav > ul > li {
+    height: 100%;
     margin-right: 40px;
+}
+
+nav > ul > li > a {
     color: white;
-    font-size: 20px;
-}
-nav ul {
-    margin-left: 80px;
-}
-nav a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 80px;
     text-decoration: none;
-    color: white;
 }
+
 .active-link {
     background-color: white;
     border: 5px solid white;
@@ -87,6 +100,7 @@ main {
     padding-left: 10px;
     width: 500px;
     height: 300px;
+    object-fit: cover;
 }
 
 h1 {
@@ -112,6 +126,25 @@ h1 {
     font-size: 125%;
 }
 
+@media screen and (max-height: 1150px) {
+    .image-top h1 {
+        padding-left: 80px;
+        margin-left: 40px;
+        padding-top: 130px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+        font-size: 400%;
+    }
+    .image-top h2 {
+        padding-left: 80px;
+        margin-left: 40px;
+        margin-top: 0px;
+    
+    
+        font-size: 300%;
+    }
+}
 
 
 @media screen and (max-width: 950px) {
@@ -134,15 +167,6 @@ h1 {
 }
 
 @media screen and (max-width: 750px) {
-    nav li {
-        display: inline;
-        margin-right: 10px;
-        color: white;
-        font-size: 20px;
-    }
-    nav ul {
-        margin-left: 20px;
-    }
     header {
         background-color: rgba(0, 0, 0, 0.5);
         display: flex;
@@ -195,38 +219,54 @@ h1 {
     }
 
 }
-@media screen and (max-width: 550px) {
-    nav li {
-        display: block;
-        margin-right: 0px;
-        color: white;
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-    nav ul {
-        margin-top: 10px;
-        margin-left: 10px;
-        padding-top: 5px;
-    }
+
+@media screen and (max-width: 700px) {
+    
     header {
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
+        height: auto;
+    }
+    header > .logo {
+        width: 100px;
         position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    
+    nav {
+        height: 100%;
+        width: 50vw;
+        margin: 0 auto;
+    }
+    
+    nav > ul {
+        display: block;
+        list-style: none;
+        height: 100%;
         width: 100%;
-        top: 0;
-        right: 0;
-        height: 140px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav > ul > li {
+        margin: 0;
+    }
+    
+    nav > ul > li > a {
+        color: white;
+        display: block;
+        line-height: 80px;
+        text-decoration: none;
+        text-align: center;
     }
 
     .image-top h1 {
         padding-left: 20px;
         margin-left: 20px;
-        padding-top: 130px;
+        padding-top: 250px;
         margin-bottom: 0px;
         margin-top: 0px;
     
-        font-size: 395%;
+        font-size: 300%;
     }
     .image-top h2 {
         padding-left: 20px;
@@ -234,7 +274,36 @@ h1 {
         margin-top: 0px;
     
     
-        font-size: 295%;
+        font-size: 200%;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    header > .logo {
+        width: 80px;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    .image-top h1 {
+        padding-left: 20px;
+        margin-left: 20px;
+        padding-top: 250px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    
+        font-size: 300%;
+    }
+    .image-top h2 {
+        padding-left: 20px;
+        margin-left: 20px;
+        margin-top: 0px;
+    
+    
+        font-size: 200%;
     }
 
     .section {

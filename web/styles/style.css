@@ -1,13 +1,13 @@
 body {
     margin: 0px;
-    background-color: lightslategray;
+    background-color: #bcb18b;
     font-size: 150%;
 }
 
 /* Header and navigation styling */
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(63,89,126, 0.5);
     display: flex;
     align-items: center;
     position: fixed;
@@ -34,12 +34,14 @@ nav > ul {
     width: 100%;
     align-items: center;
     padding: 0;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 40px;
 }
 
 nav > ul > li {
     height: 100%;
     margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav > ul > li > a {
@@ -49,20 +51,52 @@ nav > ul > li > a {
     display: block;
     line-height: 80px;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.active-link {
-    background-color: white;
-    border: 5px solid white;
-    border-radius: 2px;
+@keyframes vibrantButton {
+    from {
+        background-color: #80aeb5;
+        color: white;
+    } to {
+        background-color: #8ee0ec;
+        color: black;
+    }
+}
+@keyframes vibrantButtonReverse {
+    from {
+        background-color: #8ee0ec;
+        color: black;
+    } to {
+        background-color: #80aeb5;
+        color: white;
+    }
+}
+
+#nav-tickets {
+    animation: vibrantButtonReverse 0.5s;
+    background-color: #80aeb5;
+    height: 60px;
+}
+#nav-tickets > a {
+    height: 60px;
+    line-height: 60px;
+    color: white;
+}
+#nav-tickets:hover {
+    animation: vibrantButton 0.5s;
+    background-color: #8ee0ec;
     color: black;
 }
 
-/*-------------------------------------*/
-
-main {
-    background-color: rgb(255, 255, 255);
+.active-link {
+    background-color: rgba(85,124,161, 0.5);
+    border-radius: 2px;
+    color: white;
 }
+
+/*-------------------------------------*/
 
 .image-top {
     background-image: url("https://placekitten.com/1920/1080");
@@ -82,13 +116,34 @@ main {
     padding-left: 80px;
     margin-left: 40px;
     margin-top: 0px;
+    margin-bottom: 0px;
 
 
     font-size: 400%;
 }
 
+.image-top > button {
+    margin-left: 120px;
+    margin-top: 200px;
+
+    width: 300px;
+    height: 75px;
+    font-size: xx-large;
+
+    cursor: pointer;
+    background-color: #80aeb5;
+    color: white;
+    border: none;
+    animation: vibrantButtonReverse 0.5s;
+}
+.image-top > button:hover {
+    animation: vibrantButton 0.5s;
+    background-color: #8ee0ec;
+    color: black;
+}
+
 .section {
-    background-color: lightgray;
+    background-color: #c5c797;
     padding: 0 20px 20px 20px;
     margin: 20px 20px 0px 20px;
 }
@@ -113,6 +168,20 @@ h1 {
     margin-top: 0px;
 }
 
+@keyframes selector {
+    from {    
+        background-color: #557ca1;
+    } to {
+        background-color: #568fc5;
+    }
+}
+@keyframes selectorReverse {
+    from {    
+        background-color: #568fc5;
+    } to {
+        background-color: #557ca1;
+    }
+}
 
 #tts-selector {
     display: flex;
@@ -122,14 +191,24 @@ h1 {
 }
 #slider-left {
     margin-right: 10px;
+    cursor: pointer;
 }
 #slider-right {
     margin-left: 10px;
+    cursor: pointer;
 }
 #tts-selector > button {
     width: 150px;
     height: 50px;
     font-size: 125%;
+    background-color: #557ca1;
+    border: none;
+    color: white;
+    animation: selectorReverse 0.5s;
+}
+#tts-selector > button:hover {
+    animation: selector 0.5s;
+    background-color: #568fc5;
 }
 
 @media screen and (max-height: 1150px) {

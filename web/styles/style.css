@@ -92,15 +92,21 @@ main {
     padding: 0 20px 20px 20px;
     margin: 20px 20px 0px 20px;
 }
+.section > h2 {
+    margin-bottom: 0px;
+}
+.section > h3 {
+    margin-top: 10px;
+}
 .section-inside {
     display: flex;
     justify-content: center;
 }
 .default {
     padding-left: 10px;
-    width: 500px;
-    height: 300px;
     object-fit: cover;
+    max-height: 500px;
+    width: 500px;
 }
 
 h1 {

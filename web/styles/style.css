@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #bcb18b;
+    background-color: #557ca1;
     font-size: 150%;
 }
 
@@ -57,26 +57,22 @@ nav > ul > li > a {
 
 @keyframes vibrantButton {
     from {
-        background-color: #80aeb5;
-        color: white;
+        background-color: #bcb18b;
     } to {
-        background-color: #8ee0ec;
-        color: black;
+        background-color: #c5c797;
     }
 }
 @keyframes vibrantButtonReverse {
     from {
-        background-color: #8ee0ec;
-        color: black;
+        background-color: #c5c797;
     } to {
-        background-color: #80aeb5;
-        color: white;
+        background-color: #bcb18b;
     }
 }
 
 #nav-tickets {
     animation: vibrantButtonReverse 0.5s;
-    background-color: #80aeb5;
+    background-color: #c5c797;
     height: 60px;
 }
 #nav-tickets > a {
@@ -86,7 +82,7 @@ nav > ul > li > a {
 }
 #nav-tickets:hover {
     animation: vibrantButton 0.5s;
-    background-color: #8ee0ec;
+    background-color: #c5c797;
     color: black;
 }
 
@@ -99,9 +95,10 @@ nav > ul > li > a {
 /*-------------------------------------*/
 
 .image-top {
-    background-image: url("https://placekitten.com/1920/1080");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg");
     height: 100vh;
     max-height: 1080px;
+    color: white;
 }
 .image-top h1 {
     padding-left: 80px;
@@ -131,19 +128,22 @@ nav > ul > li > a {
     font-size: xx-large;
 
     cursor: pointer;
-    background-color: #80aeb5;
+    background-color: #bcb18b;
     color: white;
     border: none;
     animation: vibrantButtonReverse 0.5s;
 }
 .image-top > button:hover {
     animation: vibrantButton 0.5s;
-    background-color: #8ee0ec;
-    color: black;
+    background-color: #c5c797;
+}
+
+main {
+    color: white;
 }
 
 .section {
-    background-color: #c5c797;
+    background-color: #3f597e;
     padding: 0 20px 20px 20px;
     margin: 20px 20px 0px 20px;
 }
@@ -170,16 +170,16 @@ h1 {
 
 @keyframes selector {
     from {    
-        background-color: #557ca1;
+        background-color: #bcb18b;
     } to {
-        background-color: #568fc5;
+        background-color: #c5c797;
     }
 }
 @keyframes selectorReverse {
     from {    
-        background-color: #568fc5;
+        background-color: #c5c797;
     } to {
-        background-color: #557ca1;
+        background-color: #bcb18b;
     }
 }
 
@@ -201,14 +201,14 @@ h1 {
     width: 150px;
     height: 50px;
     font-size: 125%;
-    background-color: #557ca1;
+    background-color: #bcb18b;
     border: none;
     color: white;
     animation: selectorReverse 0.5s;
 }
 #tts-selector > button:hover {
     animation: selector 0.5s;
-    background-color: #568fc5;
+    background-color: #c5c797;
 }
 
 @media screen and (max-height: 1150px) {

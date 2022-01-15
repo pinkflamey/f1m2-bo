@@ -99,9 +99,10 @@ nav > ul > li > a {
 /*-------------------------------------*/
 
 .image-top {
-    background-image: url("https://placekitten.com/1920/1080");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg");
     height: 100vh;
     max-height: 1080px;
+    color: white;
 }
 .image-top h1 {
     padding-left: 80px;

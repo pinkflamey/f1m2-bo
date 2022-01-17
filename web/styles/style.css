@@ -56,6 +56,11 @@ nav > ul > li > a {
     text-decoration: none;
     padding-left: 10px;
 }
+nav > ul > li:last-child {
+    height: 50px;
+    margin-right: 0;
+    width: 140px;
+}
 
 @keyframes vibrantButton {
     from {
@@ -75,9 +80,10 @@ nav > ul > li > a {
 #nav-tickets {
     animation: vibrantButtonReverse 0.5s;
     background-color: #bcb18b;
-}
-#nav-tickets > a {
     color: white;
+    line-height: 48px;
+    text-align: center;
+    padding: 0;
 }
 #nav-tickets:hover {
     animation: vibrantButton 0.5s;

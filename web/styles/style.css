@@ -3,6 +3,8 @@ body {
     background-color: #557ca1;
     font-size: 150%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg");
+    background-attachment: fixed;
 }
 
 /* Header and navigation styling */
@@ -12,7 +14,7 @@ header {
     display: flex;
     align-items: center;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     right: 0;
     height: 80px;
@@ -41,8 +43,8 @@ nav > ul {
 nav > ul > li {
     height: 100%;
     margin-right: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav > ul > li > a {
@@ -53,7 +55,6 @@ nav > ul > li > a {
     line-height: 80px;
     text-decoration: none;
     padding-left: 10px;
-    padding-right: 10px;
 }
 
 @keyframes vibrantButton {
@@ -73,18 +74,14 @@ nav > ul > li > a {
 
 #nav-tickets {
     animation: vibrantButtonReverse 0.5s;
-    background-color: #c5c797;
-    height: 60px;
+    background-color: #bcb18b;
 }
 #nav-tickets > a {
-    height: 60px;
-    line-height: 60px;
     color: white;
 }
 #nav-tickets:hover {
     animation: vibrantButton 0.5s;
     background-color: #c5c797;
-    color: black;
 }
 
 .active-link {
@@ -96,10 +93,10 @@ nav > ul > li > a {
 /*-------------------------------------*/
 
 .image-top {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg");
     height: 100vh;
     max-height: 1080px;
     color: white;
+    width: 100%;
 }
 .image-top h1 {
     padding-left: 80px;
@@ -159,10 +156,9 @@ main {
     justify-content: center;
 }
 .default {
+    width: auto;
+    height: 500px;
     padding-left: 10px;
-    object-fit: cover;
-    max-height: 500px;
-    width: 500px;
 }
 
 h1 {
@@ -207,6 +203,9 @@ h1 {
     color: white;
     animation: selectorReverse 0.5s;
 }
+#tts-selector > button > p {
+    margin: 0;
+}
 #tts-selector > button:hover {
     animation: selector 0.5s;
     background-color: #c5c797;
@@ -230,10 +229,31 @@ h1 {
     
         font-size: 300%;
     }
+
+    .section > .section-inside > img {
+        width: auto;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    
+    header {
+        font-size: 70%;
+    }
+
+    .image-top h1 {
+        padding-top: 160px;
+    }
+
 }
 
 
 @media screen and (max-width: 950px) {
+
+    nav > ul > li {
+        margin-right: 20px;
+    }
 
     .section {
         padding: 0 20px 20px 20px;
@@ -244,28 +264,27 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-    .default {
-        padding-left: 10px;
-        width: 400px;
-        height: 240px;
+    .section > .section-inside > img {
+        height: 200px;
+    }
+
+    main > .image-top > button {
+        margin-top: 100px;
     }
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
+    
     header {
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        position: fixed;
-        width: 100vw;
-        top: 0;
-        right: 0;
-        height: 80px;
+        font-size: 60%;
+    }
+
+    nav > ul > li {
+        margin-right: 5px;
     }
 
     .image-top {
-        background-image: url("https://placekitten.com/1920/1080");
         height: 100vh;
         max-height: 1080px;
     }
@@ -273,11 +292,11 @@ h1 {
     .image-top h1 {
         padding-left: 40px;
         margin-left: 20px;
-        padding-top: 130px;
+        padding-top: 190px;
         margin-bottom: 0px;
         margin-top: 0px;
     
-        font-size: 500%;
+        font-size: 350%;
     }
     .image-top h2 {
         padding-left: 40px;
@@ -285,94 +304,98 @@ h1 {
         margin-top: 0px;
     
     
-        font-size: 400%;
+        font-size: 250%;
+    }
+    .image-top > button {
+        margin-left: 60px;
     }
 
     .section {
         padding: 0 20px 20px 20px;
         margin: 20px 20px 0px 20px;
     }
+    .section > h2 {
+        height: 60px;
+    }
     .section-inside {
         display: inline;
         justify-content: center;
         align-items: center;
     }
-    .default {
+    .section-inside > p {
+        height: 200px;
+    }
+    .section > .section-inside > img {
         display: block;
         margin: 0 auto;
-        width: 300px;
-        height: 180px;
+        height: 300px;
     }
 
 }
 
 @media screen and (max-width: 700px) {
-    
+
     header {
         height: auto;
     }
-    header > .logo {
-        width: 100px;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-    }
-    
-    nav {
-        height: 100%;
-        width: 50vw;
+
+    header > nav {
         margin: 0 auto;
+        width: 30%;
     }
-    
-    nav > ul {
+
+    header > nav > ul {
         display: block;
-        list-style: none;
-        height: 100%;
-        width: 100%;
+        margin: 0
+    }
+    header > nav > ul > li {
+        height: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    header > nav > ul > li > a {
+        text-align: center;
+        line-height: 40px;
+        padding: 0;
+    }
+
+    main > .image-top > button {
+        width: 0px;
+        height: 0px;
         padding: 0;
         margin: 0;
-    }
-    
-    nav > ul > li {
-        margin: 0;
-    }
-    
-    nav > ul > li > a {
-        color: white;
-        display: block;
-        line-height: 80px;
-        text-decoration: none;
-        text-align: center;
     }
 
     .image-top h1 {
         padding-left: 20px;
         margin-left: 20px;
-        padding-top: 250px;
+        padding-top: 300px;
         margin-bottom: 0px;
         margin-top: 0px;
-    
-        font-size: 300%;
     }
     .image-top h2 {
         padding-left: 20px;
         margin-left: 20px;
         margin-top: 0px;
+    }
     
-    
-        font-size: 200%;
+    .image-top > button {
+        visibility: collapse;
+    }
+
+    main {
+        font-size: 70%;
+    }
+
+    .section-inside > p {
+        height: 100px;
     }
     
 }
 
 @media screen and (max-width: 550px) {
 
-    header > .logo {
-        width: 80px;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-    }
+    
 
     .image-top h1 {
         padding-left: 20px;
@@ -401,11 +424,23 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-    .default {
+    .section-inside > p {
+        height: 130px;
+    }
+    .section > .section-inside > img {
         display: block;
         margin: 0 auto;
-        width: 300px;
-        height: 180px;
+        height: 250px;
+        padding: 0;
     }
 
+}
+
+@media screen and (max-width: 475px) {
+
+    
+
+    .section-inside > p {
+        height: 170px;
+    }
 }

@@ -56,6 +56,11 @@ nav > ul > li > a {
     text-decoration: none;
     padding-left: 10px;
 }
+nav > ul > li:last-child {
+    height: 50px;
+    margin-right: 0;
+    width: 140px;
+}
 
 @keyframes vibrantButton {
     from {
@@ -75,9 +80,10 @@ nav > ul > li > a {
 #nav-tickets {
     animation: vibrantButtonReverse 0.5s;
     background-color: #bcb18b;
-}
-#nav-tickets > a {
     color: white;
+    line-height: 48px;
+    text-align: center;
+    padding: 0;
 }
 #nav-tickets:hover {
     animation: vibrantButton 0.5s;
@@ -106,6 +112,7 @@ nav > ul > li > a {
     margin-top: 0px;
 
     font-size: 500%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .image-top h2 {
     padding-left: 80px;
@@ -142,7 +149,7 @@ main {
 
 section {
     background-color: #3f597e;
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     margin: 20px 20px 0px 20px;
 }
 section > h2 {
@@ -155,10 +162,51 @@ section > h3 {
     display: flex;
     justify-content: center;
 }
-.default {
-    width: auto;
-    height: 500px;
-    padding-left: 10px;
+
+@keyframes slider {
+    33% {
+        background: url("../img/reviews/2.jpg");
+        background-repeat: no-repeat;
+    }
+    66% {
+        background: url("../img/reviews/3.jpg");
+        background-repeat: no-repeat;
+    }
+    100% {
+        background: url("../img/reviews/1.jpg");
+        background-repeat: no-repeat;
+    }
+}
+section > .section-inside > figure {
+    background-image: url("../img/reviews/1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: 10px;
+    width: 375px;
+    height: 281px;
+
+    animation: slider 20s;
+    animation-iteration-count: infinite;
+}
+
+section > .section-inside:last-child {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+section > .section-inside > div > .review > h3 {
+    margin: 0;
+}
+section > .section-inside > div > .review > p {
+    margin: 0;
+}
+section > .section-inside > div > .review {
+    border-bottom: 1px solid white;
+}
+section > .section-inside > div > .review:last-child {
+    border-bottom: none;
 }
 
 h1 {
@@ -233,6 +281,7 @@ h1 {
     section > .section-inside > img {
         width: auto;
         height: 300px;
+        padding-left: 10px;
     }
 }
 

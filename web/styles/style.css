@@ -23,7 +23,7 @@ header > .logo {
     width: 80px;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 10px;
 }
 
 nav {
@@ -140,15 +140,15 @@ main {
     color: white;
 }
 
-.section {
+section {
     background-color: #3f597e;
     padding: 0 20px 20px 20px;
     margin: 20px 20px 0px 20px;
 }
-.section > h2 {
+section > h2 {
     margin-bottom: 0px;
 }
-.section > h3 {
+section > h3 {
     margin-top: 10px;
 }
 .section-inside {
@@ -230,7 +230,7 @@ h1 {
         font-size: 300%;
     }
 
-    .section > .section-inside > img {
+    section > .section-inside > img {
         width: auto;
         height: 300px;
     }
@@ -246,6 +246,10 @@ h1 {
         padding-top: 160px;
     }
 
+    main > .image-top > button {
+        margin-top: 100px;
+    }
+
 }
 
 
@@ -255,7 +259,7 @@ h1 {
         margin-right: 20px;
     }
 
-    .section {
+    section {
         padding: 0 20px 20px 20px;
         margin: 20px 20px 0px 20px;
     }
@@ -264,13 +268,11 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-    .section > .section-inside > img {
+    section > .section-inside > img {
         height: 200px;
     }
 
-    main > .image-top > button {
-        margin-top: 100px;
-    }
+    
 
 }
 
@@ -310,11 +312,11 @@ h1 {
         margin-left: 60px;
     }
 
-    .section {
+    section {
         padding: 0 20px 20px 20px;
         margin: 20px 20px 0px 20px;
     }
-    .section > h2 {
+    section > h2 {
         height: 60px;
     }
     .section-inside {
@@ -325,7 +327,7 @@ h1 {
     .section-inside > p {
         height: 200px;
     }
-    .section > .section-inside > img {
+    section > .section-inside > img {
         display: block;
         margin: 0 auto;
         height: 300px;
@@ -415,7 +417,7 @@ h1 {
         font-size: 200%;
     }
 
-    .section {
+    section {
         padding: 0 10px 10px 10px;
         margin: 10px 10px 0px 10px;
     }
@@ -427,7 +429,7 @@ h1 {
     .section-inside > p {
         height: 130px;
     }
-    .section > .section-inside > img {
+    section > .section-inside > img {
         display: block;
         margin: 0 auto;
         height: 250px;

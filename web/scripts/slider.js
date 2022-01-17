@@ -7,15 +7,15 @@ const date = document.getElementById("tts-date");
 const desc = document.getElementById("tts-description");
 
 let titles = [
-    "Tentoonstelling De aardappeleters: misser of meesterwerk?", //0
+    "De aardappeleters", //0
     "De vaste collectie: Van Goghs meesterwerken", //1
     "Van Gogh en de olijfgaarden" //2
 ]
 
 let dates = [
-    "van 8 oktober 2021 tot 13 februari 2022", //0
+    "2022 08-10-2021 tot 13-02-2022", //0
     "Altijd te zien", //1
-    "van 11 maart 2022 tot 12 juni 2022" //2
+    "11-03-2022 tot 12-06-2022" //2
 ]
 
 let descs = [

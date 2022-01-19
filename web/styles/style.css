@@ -58,7 +58,7 @@ nav > ul > li > a {
 }
 nav > ul > li:last-child {
     height: 50px;
-    margin-right: 0;
+    margin-right: 0px;
     width: 140px;
 }
 
@@ -190,22 +190,22 @@ section > .section-inside > figure {
     animation-iteration-count: infinite;
 }
 
-section > .section-inside:last-child {
+.reviews > .section-inside {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
 }
-section > .section-inside > div > .review > h3 {
+.reviews > .section-inside > div > .review > h3 {
     margin: 0;
 }
-section > .section-inside > div > .review > p {
+.reviews > .section-inside > div > .review > p {
     margin: 0;
 }
-section > .section-inside > div > .review {
+.reviews > .section-inside > div > .review {
     border-bottom: 1px solid white;
 }
-section > .section-inside > div > .review:last-child {
+.reviews > .section-inside > div > .review:last-child {
     border-bottom: none;
 }
 
@@ -410,6 +410,13 @@ h1 {
         padding: 0;
     }
 
+    
+    nav > ul > li:last-child {
+        height: 50px;
+        margin-right: auto;
+        width: auto;
+    }
+
     main > .image-top > button {
         width: 0px;
         height: 0px;
@@ -440,6 +447,25 @@ h1 {
 
     .section-inside > p {
         height: 100px;
+    }
+
+    .reviews > .section-inside {
+        display: grid;
+        grid-auto-flow: row;
+        align-items: center;
+        justify-items: center;
+    }
+    .reviews > .section-inside > div > .review > h3 {
+        margin: 0;
+    }
+    .reviews > .section-inside > div > .review > p {
+        margin: 0;
+    }
+    .reviews > .section-inside > div > .review {
+        border-bottom: 1px solid white;
+    }
+    .reviews > .section-inside > div > .review:last-child {
+        border-bottom: none;
     }
     
 }

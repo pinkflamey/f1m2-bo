@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>Van Gogh Museum (dev)</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/route.css">
+
+</head>
+
+<body onload="loadFirstEx(0)"> <!-- Deze functie laadt een bepaalde tentoonstelling als eerste tentoonstelling. Begint bij 0. -->
+
+    <header>
+        <nav>
+
+            <!--Om een link als actief aan te duiden, gebruik 'class="active-link"'-->
+
+            <ul>
+                <li>
+                    <a href="geschiedenis.html">Geschiedenis</a>
+                </li>
+                <li>
+                    <a href="information.html">Bezoekersinformatie</a>
+                </li>
+                <li>
+                    <a class="active-link" href="route.html">Maak kennis</a>
+                </li>
+                <li>
+                    <a href="english/index.html" class="language">EN</a>
+                </li>
+                <li>
+                    <a href="#" id="nav-tickets">Tickets</a>
+                </li>
+            </ul>
+        
+        </nav>
+
+        <a href="#" class="logo">
+            <img src="img/logo.svg" alt="Logo Van Gogh Museum">
+        </a>
+
+    </header>
+
+    <main>
+
+        
+
+        <section>
+
+            <h1>Interactieve route</h1>
+
+            <div id="route-container">
+
+                <div id="route-image">
+
+                </div>
+                <div id="route-right">
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    
+    <script src="scripts/slider.js"></script>
+
+</body>
+
+</html>

@@ -148,7 +148,7 @@ main {
 }
 
 section {
-    background-color: #3f597e;
+    background-color: rgba(63, 89, 126, 0.7);
     padding: 20px 20px 20px 20px;
     margin: 20px 20px 0px 20px;
 }
@@ -207,6 +207,9 @@ section > .section-inside > figure {
 }
 .reviews > .section-inside > div > .review:last-child {
     border-bottom: none;
+}
+.review {
+    background: none;
 }
 
 h1 {

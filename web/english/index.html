@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <title>Van Gogh Museum (dev)</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body onload="loadFirstEx(0)"> <!-- Deze functie laadt een bepaalde tentoonstelling als eerste tentoonstelling. Begint bij 0. -->
+
+    <header>
+        <nav>
+
+            <!--Om een link als actief aan te duiden, gebruik 'class="active-link"'-->
+
+            <ul>
+                <li>
+                    <a href="geschiedenis.html">History</a>
+                </li>
+                <li>
+                    <a href="information.html">Visitors info</a>
+                </li>
+                <li>
+                    <a href="route.html">Digital route</a>
+                </li>
+                <li>
+                    <a href="../index.html" class="language">NL</a>
+                </li>
+                <li>
+                    <a href="#" id="nav-tickets">Tickets</a>
+                </li>
+            </ul>
+        
+        </nav>
+
+        <a href="#" class="logo">
+            <img src="img/logo.svg" alt="Logo Van Gogh Museum">
+        </a>
+
+    </header>
+
+    <main>
+
+        <div class="image-top">
+
+            <h1>Van Gogh Museum</h1>
+            <h2>Amsterdam</h2>
+
+            <button>Tickets</button>
+
+        </div>
+
+        <section>
+
+            <h1>Huidige tentoonstellingen</h1>
+            <h2 id="tts-title">De 4 Katten</h2>
+            <h3 id="tts-date">18-18-18</h3>
+
+            <div class="section-inside" id="tentoonstellingen">
+
+                <p id="tts-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Erat velit scelerisque in dictum non consectetur a erat nam. 
+                    Lectus nulla at volutpat diam. At auctor urna nunc id cursus metus aliquam eleifend mi. 
+                    Cras pulvinar mattis nunc sed blandit libero volutpat sed cras.
+                </p>
+
+                <img src="https://placekitten.com/1920/1080" id="tts-image" alt="Foto van een van de tentoonstellingen">
+
+            </div>
+
+            <div id="tts-selector">
+                <button id="slider-left" onclick="changeExhibition(0)">
+                    <p><</p>
+                </button>
+                <button id="slider-right" onclick="changeExhibition(1)">
+                    <p>></p>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="reviews">
+
+            <h1>Reviews</h1>
+
+            <div class="section-inside">
+                <div>
+                    <section class="review">
+                        <h3>Jurian Heijink</h3>
+                        <p>★★★★☆</p>
+                        <p>
+                            Beautiful museum, gorgeous building at a marvelous location. Beautiful story about Van Gogh, his friends and his family.
+                            Really well done. And, there's also some nice paintings to see ;)
+                        </p>
+                    </section>
+                    <section class="review">
+                        <h3>Niek van Bloem</h3>
+                        <p>★★★★★</p>
+                        <p>
+                            Incredible museum. Compact, interesting and a journey through Vincent's life with his masterpieces,
+                            his studies, his sketches and his letters.
+                        </p>
+                    </section>
+                    <section class="review">
+                        <h3>Jan-Jaap Dufour</h3>
+                        <p>★★★★★</p>
+                        <p>
+                            A visit to the Van Gogh Museum feels like coming home every time I visit.
+                            So familiar, and still every time a new source of inspiration. Every visit is special.
+                        </p>
+                    </section>
+                </div>
+
+                <figure>
+                    
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+    
+    <script src="scripts/slider.js"></script>
+
+</body>
+
+</html>

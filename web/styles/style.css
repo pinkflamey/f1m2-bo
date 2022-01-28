@@ -94,10 +94,12 @@ header > .logo {
 /*-------------------------------------*/
 
 .image-top {
+    padding: 0;
+    margin: 0;
     height: 100vh;
     max-height: 1080px;
-    color: white;
     width: 100%;
+    background: none;
 }
 .image-top > h1 {
     padding-left: 80px;
@@ -108,6 +110,7 @@ header > .logo {
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 600%;
+    text-align: left;
 }
 .image-top h2 {
     padding-left: 80px;
@@ -116,6 +119,7 @@ header > .logo {
     margin-bottom: 0px;
 
     font-size: 400%;
+    text-align: left;
 }
 
 .image-top > button {
@@ -201,8 +205,6 @@ section > p {
     grid-area: img;
     max-width: 500px;
     height: auto;
-
-    margin-top: 20px;
 }
 .tentoonstellingen > .slider {
     grid-area: slider;
@@ -227,7 +229,7 @@ section > p {
     display: flex;
     justify-content: center;
 
-    margin: 20px 0 0 0;
+    margin: 10px 0 10px 0;
 }
 #slider-left {
     margin-right: 10px;
@@ -239,7 +241,7 @@ section > p {
 }
 #tts-selector > button {
     width: 150px;
-    height: 50px;
+    height: 30px;
     font-size: 125%;
     background-color: #bcb18b;
     border: none;
@@ -387,13 +389,16 @@ section > p {
         font-size: 300%;
     }
 
-    .tentoonstellingen > img {
-        max-width: 200px;
-        height: auto;
+    .tentoonstellingen {
+        display: block;
     }
-    
     .tentoonstellingen > p {
-        font-size: 110%;
+        width: 100%;
+        text-align: center;
+    }
+    .tentoonstellingen > img {
+        max-width: none;
+        width: 100%;
     }
 
     .reviews {
@@ -452,17 +457,7 @@ section > p {
         margin-left: 40px;
     }
 
-    .tentoonstellingen {
-        display: block;
-    }
-    .tentoonstellingen > p {
-        width: 100%;
-        text-align: center;
-    }
-    .tentoonstellingen > img {
-        max-width: none;
-        width: 100%;
-    }
+    
 }
 
 @media screen and (max-height: 450px) {

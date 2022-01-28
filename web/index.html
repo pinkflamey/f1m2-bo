@@ -63,12 +63,11 @@
         <section class="tentoonstellingen">
 
             <h1>Huidige tentoonstellingen</h1>
-            <h2>Naam</h2>
-            <h3>Datum</h3>
+            <h2 id="tts-title">Naam</h2>
+            <h3 id="tts-date">Datum</h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque ipsum tempore, neque dignissimos molestias iusto numquam illo! Totam, ullam. Illo in voluptatum eaque dolores. Obcaecati laboriosam rerum assumenda repellat.</p>
-            <img src="https://placekitten.com/500/500" alt="Placeholder">
-
+            <p id="tts-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque ipsum tempore, neque dignissimos molestias iusto numquam illo! Totam, ullam. Illo in voluptatum eaque dolores. Obcaecati laboriosam rerum assumenda repellat.</p>
+            
             <div class="slider" id="tts-selector">
                 <button id="slider-left" onclick="changeExhibition(0)">
                     <p><</p>
@@ -77,6 +76,8 @@
                     <p>></p>
                 </button>
             </div>
+            
+            <img id="tts-image" src="https://placekitten.com/500/500" alt="Placeholder">
 
         </section>
 

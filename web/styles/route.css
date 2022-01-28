@@ -1,4 +1,93 @@
 section:first-of-type {
     margin-top: 100px;
+}
 
+body {
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.route-cont {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#container {
+    background-color: rgba(63, 89, 126, 0.7);
+    height: auto;
+    margin: 50px auto auto auto;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 337.5px auto;
+
+    text-align: center;
+    font-size: xxx-large;
+}
+
+#myInteraction {
+    background-color: rgba(63, 89, 126, 0.7);
+    padding: 20px;
+
+}
+
+.route-img {
+    height: 600px;
+    width: auto;
+    padding-left: 20px;
+}
+
+input {
+    width: 300px;
+    border-radius: 5px;
+    font-size: larger;
+
+    display: block;
+    margin: 0 auto;
+
+    
+    margin-top: 20px;
+}
+
+#button {
+    background-color: #bcb18b;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#button:hover {
+    background-color: burlywood;
+}
+
+h6 {
+    margin: 20px 0 20px 0;
+}
+
+.route-nav {
+    display: grid;
+    grid-template-areas: 
+    'north north'
+    'west east'
+    'south south';
+}
+.route-nav > button {
+    height: 40px;
+    background-color: #bcb18b;
+    border: 1px solid black;
+}
+.route-nav > button:hover {
+    background-color: burlywood;
+}
+#buttonNoord {
+    grid-area: north;
+}
+#buttonOost {
+    grid-area: east;
+}
+#buttonZuid {
+    grid-area: south;
+}
+#buttonWest {
+    grid-area: west;
 }

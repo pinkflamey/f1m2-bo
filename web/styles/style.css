@@ -34,6 +34,7 @@ header > .logo {
     list-style-type: none;
     display: flex;
     align-items: center;
+    gap: 40px;
 
     padding: 0;
     margin: 0;

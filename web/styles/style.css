@@ -363,6 +363,10 @@ section > p {
 
 @media screen and (max-width: 700px) {
 
+    .ticketTop {
+        margin-left: 100px;
+    }
+
     .tentoonstellingen > img {
         max-width: 250px;
         height: auto;

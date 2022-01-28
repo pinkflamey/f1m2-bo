@@ -55,6 +55,7 @@ header > .logo {
     background: #bcb18b; 
     color: white;
     border: none;
+    margin-left: 30vw;
 }
 
 @keyframes vibrantButton {
@@ -351,13 +352,6 @@ section > p {
 
 
 @media screen and (max-width: 700px) {
-    .ticketTop {
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        padding: 0;
-        margin: 0;
-    }
 
     .tentoonstellingen > img {
         max-width: 250px;
@@ -434,6 +428,11 @@ section > p {
     .mainNavigation > ul > li > a {
         line-height: 35px;
         text-align: center;
+    }
+
+    .ticketTop {
+        visibility: hidden;
+        display: none;
     }
 
     .image-top {

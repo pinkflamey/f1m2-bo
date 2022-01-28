@@ -55,23 +55,39 @@
 
             <h1>Interactieve route</h1>
 
-            <div id="route-container">
+            <div class="route-cont">
+                <img class="route-img" id="myImage" src="img/route/0.jpg" alt="foto sb">
 
-                <div id="route-image">
+                <div id="myInteraction">
+                    
+                    <div id="myTitle">
+
+                        Plaats 0
+
+                    </div>
+
+                    <input type="text" id="myInput" autocomplete="off">
+
+                    <input id="button" type="button" value="Go!" onclick="getInput()">
+
+                    <h6>
+                        Kies welke richting je op gaat:
+                    </h6>
+                    <div class="route-nav">
+                        <button id="buttonNoord" onclick="goDirection('noord')">Noord</button>
+                        <button id="buttonOost" onclick="goDirection('oost')">Oost</button>
+                        <button id="buttonZuid" onclick="goDirection('zuid')">Zuid</button>
+                        <button id="buttonWest" onclick="goDirection('west')">West</button>
+                    </div>
 
                 </div>
-                <div id="route-right">
-
-                </div>
-
             </div>
 
         </section>
 
-
     </main>
     
-    <script src="scripts/slider.js"></script>
+    <script src="scripts/script.js"></script>
 
 </body>
 

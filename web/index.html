@@ -17,29 +17,31 @@
 <body onload="loadFirstEx(0)"> <!-- Deze functie laadt een bepaalde tentoonstelling als eerste tentoonstelling. Begint bij 0. -->
 
     <header>
-        <nav>
+        <nav class="mainNavigation">
 
             <!--Om een link als actief aan te duiden, gebruik 'class="active-link"'-->
 
             <ul>
-                <li>
+                <li class="navHis">
                     <a href="geschiedenis.html">Geschiedenis</a>
                 </li>
-                <li>
+                <li class="navInfo">
                     <a href="information.html">Bezoekersinformatie</a>
                 </li>
-                <li>
+                <li class="navRoute">
                     <a href="route.html">Maak kennis</a>
                 </li>
-                <li>
+                <li class="navLan">
                     <a href="english/index.html" class="language">EN</a>
-                </li>
-                <li>
-                    <a href="#" id="nav-tickets">Tickets</a>
                 </li>
             </ul>
         
         </nav>
+
+        
+        <button class="ticketTop">
+            Tickets
+        </button>
 
         <a href="#" class="logo">
             <img src="img/logo.svg" alt="Logo Van Gogh Museum">
@@ -58,27 +60,16 @@
 
         </div>
 
-        <section>
+        <section class="tentoonstellingen">
 
             <h1>Huidige tentoonstellingen</h1>
-            <h2 id="tts-title">De 4 Katten</h2>
-            <h3 id="tts-date">18-18-18</h3>
+            <h2>Naam</h2>
+            <h3>Datum</h3>
 
-            <div class="section-inside" id="tentoonstellingen">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque ipsum tempore, neque dignissimos molestias iusto numquam illo! Totam, ullam. Illo in voluptatum eaque dolores. Obcaecati laboriosam rerum assumenda repellat.</p>
+            <img src="https://placekitten.com/500/500" alt="Placeholder">
 
-                <p id="tts-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Erat velit scelerisque in dictum non consectetur a erat nam. 
-                    Lectus nulla at volutpat diam. At auctor urna nunc id cursus metus aliquam eleifend mi. 
-                    Cras pulvinar mattis nunc sed blandit libero volutpat sed cras.
-                </p>
-
-                <img src="https://placekitten.com/1920/1080" id="tts-image" alt="Foto van een van de tentoonstellingen">
-
-            </div>
-
-            <div id="tts-selector">
+            <div class="slider" id="tts-selector">
                 <button id="slider-left" onclick="changeExhibition(0)">
                     <p><</p>
                 </button>
@@ -91,41 +82,55 @@
 
         <section class="reviews">
 
-            <h1>Reviews</h1>
+            <h1>
+                Reviews
+            </h1>
 
-            <div class="section-inside">
-                <div>
-                    <section class="review">
-                        <h3>Jurian Heijink</h3>
-                        <p>★★★★☆</p>
-                        <p>
-                            Mooi museum, mooi gebouw op een mooie locatie mooi verhaal over van Gogh en zijn vrienden en familie. 
-                            Echt heel mooi gedaan. Daarnaast zijn er ook nog wat schilderijen die de moeite waard zijn ;)
-                        </p>
-                    </section>
-                    <section class="review">
-                        <h3>Niek van Bloem</h3>
-                        <p>★★★★★</p>
-                        <p>
-                            Mooi museum. Compact, interessant en een reis door Vincent's leven met zijn meesterwerken, 
-                            zijn studies, zijn schetsen en zijn brieven.
-                        </p>
-                    </section>
-                    <section class="review">
-                        <h3>Jan-Jaap Dufour</h3>
-                        <p>★★★★★</p>
-                        <p>
-                            Een bezoek aan het Van Gogh museum voelt telkens weer als thuis komen. 
-                            Zo vertrouwd en telkens toch weer nieuwe inspiratie om op te doen. Elk bezoek blijft speciaal.
-                        </p>
-                    </section>
-                </div>
+            <section class="r1">
 
-                <figure>
-                    
+                <h2 class="reviewTitle">
+                    Review #1
+                </h2>
+                <p class="reviewPar">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis esse magnam doloribus aspernatur sed. Earum tempora blanditiis fugit vitae odit autem quis debitis! Odit nobis eligendi atque nostrum asperiores?
+                </p>
+
+                <figure class="img-wrapper">
+                    <img src="https://placekitten.com/500/300" alt="Placeholder">
                 </figure>
 
-            </div>
+            </section>
+            <section class="r2">
+
+                <h2 class="reviewTitle">
+                    Review #2
+                </h2>
+                <p class="reviewPar">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis esse magnam doloribus aspernatur sed. Earum tempora blanditiis fugit vitae odit autem quis debitis! Odit nobis eligendi atque nostrum asperiores?
+                </p>
+
+            
+                <figure class="img-wrapper">
+                    <img src="https://placekitten.com/500/300" alt="Placeholder">
+                </figure>
+
+            </section>
+            <section class="r3">
+
+                <h2 class="reviewTitle">
+                    Review #3
+                </h2>
+                <p class="reviewPar">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis esse magnam doloribus aspernatur sed. Earum tempora blanditiis fugit vitae odit autem quis debitis! Odit nobis eligendi atque nostrum asperiores?
+                </p>
+
+
+            
+                <figure class="img-wrapper">
+                    <img src="https://placekitten.com/500/300" alt="Placeholder">
+                </figure>
+
+            </section>
 
         </section>
 

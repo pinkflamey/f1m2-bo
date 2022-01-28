@@ -57,6 +57,7 @@ header > .logo {
     color: white;
     border: none;
     margin-left: 30vw;
+    font-size: 110%;
 }
 
 @keyframes vibrantButton {
@@ -169,6 +170,13 @@ section > h2 {
 section > h3 {
     margin: 0;
     font-size: 175%;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+section > h4 {
+    margin: 0;
+    font-size: 160%;
     text-align: center;
 
     margin-bottom: 10px;
@@ -309,8 +317,9 @@ section > p {
 .reviewTitle {
     margin-top: 20px;
     margin-bottom: 10px;
-
-    text-align: left;
+}
+.reviewPar {
+    text-align: center;
 }
 
 @media screen and (max-width: 1000px) {

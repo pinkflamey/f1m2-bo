@@ -196,8 +196,8 @@ section > p {
     'h1 h1 h1 h1 h1'
     'h2 h2 h2 h2 h2'
     'h3 h3 h3 h3 h3'
-    'p p img img img'
-    'slider slider slider slider slider';
+    'x x slider slider slider'
+    'p p img img img';
 }
 .tentoonstellingen > h1 {
     grid-area: h1;
@@ -214,6 +214,7 @@ section > p {
 .tentoonstellingen > img {
     grid-area: img;
     max-width: 500px;
+    max-height: 600px;
     height: auto;
 }
 .tentoonstellingen > .slider {
@@ -235,7 +236,7 @@ section > p {
     }
 }
 
-#tts-selector {
+.slider {
     display: flex;
     justify-content: center;
 
@@ -249,7 +250,7 @@ section > p {
     margin-left: 10px;
     cursor: pointer;
 }
-#tts-selector > button {
+.slider > button {
     width: 150px;
     height: 30px;
     font-size: 125%;
@@ -258,10 +259,10 @@ section > p {
     color: white;
     animation: selectorReverse 0.5s;
 }
-#tts-selector > button > p {
+.slider > button > p {
     margin: 0;
 }
-#tts-selector > button:hover {
+.slider > button:hover {
     animation: selector 0.5s;
     background-color: #c5c797;
 }

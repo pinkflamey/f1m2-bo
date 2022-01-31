@@ -17,31 +17,25 @@
 <body onload="loadFirstEx(0)"> <!-- Deze functie laadt een bepaalde tentoonstelling als eerste tentoonstelling. Begint bij 0. -->
 
     <header>
-        <nav>
-
-            <!--Om een link als actief aan te duiden, gebruik 'class="active-link"'-->
+        <nav class="mainNavigation">
 
             <ul>
-                <li>
-                    <a href="geschiedenis.html">Geschiedenis</a>
+                <li class="navRoute">
+                    <a href="route.html">Maak kennis</a>
                 </li>
-                <li>
-                    <a href="information.html">Bezoekersinformatie</a>
-                </li>
-                <li>
-                    <a class="active-link" href="route.html">Maak kennis</a>
-                </li>
-                <li>
+                <li class="navLan">
                     <a href="english/index.html" class="language">EN</a>
-                </li>
-                <li>
-                    <a href="#" id="nav-tickets">Tickets</a>
                 </li>
             </ul>
         
         </nav>
 
-        <a href="index.html" class="logo">
+        
+        <button class="ticketTop">
+            Tickets
+        </button>
+
+        <a href="#" class="logo">
             <img src="img/logo.svg" alt="Logo Van Gogh Museum">
         </a>
 

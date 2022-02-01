@@ -22,16 +22,15 @@ let locaties = [
     "title":"Plaats 0",
     "img":"img/route/0.jpg",
     "directions": {
-        "zuid": 1
+        "noord": 1
     }
 },
 {
     "title":"Plaats 1",
     "img":"img/route/1.jpg",
     "directions": {
-        "noord": 0,
-        "oost": 5,
-        "zuid": 4,
+        "noord": 4,
+        "zuid": 0,
         "west": 2
     }
 },
@@ -40,78 +39,21 @@ let locaties = [
     "img":"img/route/2.jpg",
     "directions": {
         "oost": 1,
-        "zuid": 3
+        "noord": 3
     }
 },
 {
     "title":"Plaats 3",
     "img":"img/route/3.jpg",
     "directions": {
-        "noord": 2
+        "zuid": 2
     }
 },
 {
     "title":"Plaats 4",
     "img":"img/route/4.jpg",
     "directions": {
-        "noord": 1
-    }
-},
-{
-    "title":"Plaats 5",
-    "img":"img/route/5.jpg",
-    "directions": {
-        "noord": 10,
-        "oost": 6,
-        "west": 1
-    }
-},
-{
-    "title":"Plaats 6",
-    "img":"img/route/6.jpg",
-    "directions": {
-        "oost": 7,
-        "zuid": 11,
-        "west": 5
-    }
-},
-{
-    "title":"Plaats 7",
-    "img":"img/route/7.jpg",
-    "directions": {
-        "noord": 9,
-        "zuid": 8,
-        "west": 6
-    }
-},
-{
-    "title":"Plaats 8",
-    "img":"img/route/8.jpg",
-    "directions": {
-        "noord": 7
-    }
-},
-{
-    "title":"Plaats 9",
-    "img":"img/route/9.jpg",
-    "directions": {
-        "zuid": 7,
-        "west": 10
-    }
-},
-{
-    "title":"Plaats 10",
-    "img":"img/route/10.jpg",
-    "directions": {
-        "oost": 9,
-        "zuid": 5
-    }
-},
-{
-    "title":"Plaats 11",
-    "img":"img/route/11.jpg",
-    "directions": {
-        "noord": 6
+        "zuid": 1
     }
 }]
 

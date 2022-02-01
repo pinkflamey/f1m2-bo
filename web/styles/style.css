@@ -156,9 +156,6 @@ section {
     margin: 20px 20px 0px 20px;
 
 }
-section:last-of-type {
-    margin-bottom: 20px;
-}
 
 section > h1 {
     margin: 0;
@@ -327,6 +324,9 @@ section > p {
     text-align: center;
 }
 
+.info {
+    margin-bottom: 20px;
+}
 
 .info > .container {
     display: flex;

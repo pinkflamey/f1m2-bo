@@ -208,6 +208,7 @@ section > p {
 }
 .tentoonstellingen > p {
     grid-area: p;
+    margin-bottom: 20px;
 }
 .tentoonstellingen > img {
     grid-area: img;

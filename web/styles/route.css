@@ -21,9 +21,7 @@ body {
     margin-top: 20px;
 }
 
-.route-cont {
-    position: relative;
-}
+
 
 .location {
     grid-area: loc;

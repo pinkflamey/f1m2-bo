@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     background-color: #557ca1;
@@ -51,14 +55,7 @@ header > .logo {
     height: 100%;
 }
 
-.ticketTop {
-    padding: 15px 25px 15px 25px;
-    background: #bcb18b; 
-    color: white;
-    border: none;
-    margin-left: 30vw;
-    font-size: 110%;
-}
+
 
 @keyframes vibrantButton {
     from {
@@ -75,23 +72,23 @@ header > .logo {
     }
 }
 
-#nav-tickets {
-    animation: vibrantButtonReverse 0.5s;
-    background-color: #bcb18b;
+.ticketTop, .buyTickets {
+    padding: 15px 25px 15px 25px;
+    background: #bcb18b; 
     color: white;
-    line-height: 48px;
-    text-align: center;
-    padding: 0;
+    border: none;
+    margin-left: 30vw;
+    font-size: 110%;
+    animation: vibrantButtonReverse 0.5s;
+    cursor: pointer;
 }
-#nav-tickets:hover {
+.ticketTop:hover, .buyTickets:hover {
     animation: vibrantButton 0.5s;
     background-color: #c5c797;
 }
 
-.active-link {
-    background-color: rgba(85,124,161, 0.5);
-    border-radius: 2px;
-    color: white;
+.buyTickets {
+    margin: 0;
 }
 
 /*-------------------------------------*/
@@ -356,6 +353,18 @@ section > p {
     margin: 0 auto;
     margin-top: 20px;
     padding: 0;
+}
+
+.tickets > .ticketPriceList {
+    width: 50%;
+    margin: 0 auto;
+}
+.tickets > .ticketPriceList td {
+    width: 50%;
+    text-align: center;
+}
+.tickets > .ticketPriceList > tbody > tr > th {
+    height: 72px;
 }
 
 @media screen and (max-width: 1000px) {

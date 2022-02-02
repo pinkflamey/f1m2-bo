@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
 
@@ -19,8 +19,6 @@
     <header>
         <nav class="mainNavigation">
 
-            <!--Om een link als actief aan te duiden, gebruik 'class="active-link"'-->
-
             <ul>
                 <li class="navRoute">
                     <a href="route.html">Maak kennis</a>
@@ -33,11 +31,11 @@
         </nav>
 
         
-        <button class="ticketTop">
+        <button class="ticketTop" onclick="window.location.href='index.html#tickets'">
             Tickets
         </button>
 
-        <a href="#" class="logo">
+        <a href="index.html#top" class="logo">
             <img src="img/logo.svg" alt="Logo Van Gogh Museum">
         </a>
 
@@ -45,12 +43,12 @@
 
     <main>
 
-        <section class="image-top">
+        <section id="top" class="image-top">
 
             <h1>Van Gogh Museum</h1>
             <h2>Amsterdam</h2>
 
-            <button>Tickets</button>
+            <button onclick="window.location.href='index.html#tickets'">Tickets</button>
 
         </section>
 
@@ -62,10 +60,10 @@
 
             <div class="slider" id="tts-selector">
                 <button id="slider-left" onclick="changeExhibition(0)">
-                    <p><</p>
+                    &lt;
                 </button>
                 <button id="slider-right" onclick="changeExhibition(1)">
-                    <p>></p>
+                    >
                 </button>
             </div>
 
@@ -224,7 +222,69 @@
                 </div>
             </div>
 
+        </section>
 
+        <section id="tickets" class="tickets">
+
+            <h1 class="title">Tickets</h1>
+
+            <h2 class="priceList">Prijzen</h2>
+
+            <table class="ticketPriceList">
+
+                <tbody>
+
+                    <tr>
+                        <td><b>Volwassenen</b></td>
+                        <td>€19,-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Jeugd (tot 18 jaar)</b></td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><b>CJP-pas</b></td>
+                        <td>€9,-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Studenten (geldig ma t/m vr)</b></td>
+                        <td>€10,-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Museumkaart</b></td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><b>Vincent's Friends</b></td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><b>Vriendenloterij VIP-KAART</b></td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><b>ICOM-kaart</b></td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><b>Rembrandtkaart</b></td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><b>Stadspas</b></td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <button class="buyTickets" onclick="window.location.href='https://tickets.vangoghmuseum.nl/?promo_creative=button&promo_pos=www-vgm&promo_name=tickets&promo_id=www-vgm-tickets-button'">Koop nu je tickets</button>
+                        </th>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            
 
         </section>
 

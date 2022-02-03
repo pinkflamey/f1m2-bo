@@ -1,5 +1,6 @@
-section:first-of-type {
+.container {
     margin-top: 100px;
+    padding: 10px;
 }
 
 body {
@@ -7,46 +8,23 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.route-cont {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
 
-#container {
-    background-color: rgba(63, 89, 126, 0.7);
-    height: auto;
-    margin: 50px auto auto auto;
-    padding: 10px;
-
-    display: grid;
-    grid-template-columns: 337.5px auto;
-
-    text-align: center;
-    font-size: xxx-large;
-}
-
-#myInteraction {
+.interaction {
     background-color: rgba(63, 89, 126, 0.7);
     padding: 20px;
-
+    margin: 0;
 }
 
 .route-img {
-    height: 600px;
-    width: auto;
-    padding-left: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-input {
-    width: 300px;
-    border-radius: 5px;
-    font-size: larger;
 
-    display: block;
-    margin: 0 auto;
 
-    
-    margin-top: 20px;
+.location {
+    grid-area: loc;
 }
 
 #button {
@@ -60,8 +38,9 @@ input {
     background-color: burlywood;
 }
 
-h6 {
+.routeHeader2 {
     margin: 20px 0 20px 0;
+    font-size: 200%;
 }
 
 .route-nav {
@@ -70,6 +49,8 @@ h6 {
     'north north'
     'west east'
     'south south';
+    grid-area: nav;
+    margin-top: 10px;
 }
 .route-nav > button {
     height: 40px;
@@ -90,4 +71,38 @@ h6 {
 }
 #buttonWest {
     grid-area: west;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+    
+
+    
+    .route-img {
+        margin: 0 auto;
+    }
+
+    .interaction {
+        height: 200px;
+        margin: 0 auto;
+        font-size: 90%;
+    }
+
+    .routeHeader2 {
+        margin: 0;
+    }
+    .location {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .interaction {
+        font-size: 75%;
+    }
 }

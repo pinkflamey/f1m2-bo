@@ -1,7 +1,11 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     background-color: #557ca1;
-    font-size: 150%;
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg");
     background-attachment: fixed;
@@ -13,11 +17,14 @@ header {
     background-color: rgba(63,89,126, 0.5);
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    gap: 50%;
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
     height: 80px;
+    font-size: 120%;
 }
 header > .logo {
     width: 80px;
@@ -26,41 +33,29 @@ header > .logo {
     right: 10px;
 }
 
-nav {
-    height: 100%;
-}
 
-nav > ul {
+.mainNavigation > ul {
+    list-style-type: none;
     display: flex;
-    list-style: none;
-    height: 100%;
-    width: 100%;
     align-items: center;
+    gap: 40px;
+
     padding: 0;
-    margin: 0 0 0 40px;
+    margin: 0;
+    margin-left: 40px;
 }
-
-nav > ul > li {
-    height: 100%;
-    margin-right: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+.mainNavigation > ul > li {
+    padding: 5px 15px 5px 15px;
 }
-
-nav > ul > li > a {
+.mainNavigation > ul > li > a {
     color: white;
+    text-decoration: none;
+
     width: 100%;
     height: 100%;
-    display: block;
-    line-height: 80px;
-    text-decoration: none;
-    padding-left: 10px;
 }
-nav > ul > li:last-child {
-    height: 50px;
-    margin-right: 0px;
-    width: 140px;
-}
+
+
 
 @keyframes vibrantButton {
     from {
@@ -77,42 +72,44 @@ nav > ul > li:last-child {
     }
 }
 
-#nav-tickets {
-    animation: vibrantButtonReverse 0.5s;
-    background-color: #bcb18b;
+.ticketTop, .buyTickets {
+    padding: 15px 25px 15px 25px;
+    background: #bcb18b; 
     color: white;
-    line-height: 48px;
-    text-align: center;
-    padding: 0;
+    border: none;
+    font-size: 110%;
+    animation: vibrantButtonReverse 0.5s;
+    cursor: pointer;
 }
-#nav-tickets:hover {
+.ticketTop:hover, .buyTickets:hover {
     animation: vibrantButton 0.5s;
     background-color: #c5c797;
 }
 
-.active-link {
-    background-color: rgba(85,124,161, 0.5);
-    border-radius: 2px;
-    color: white;
+.buyTickets {
+    margin: 0;
 }
 
 /*-------------------------------------*/
 
 .image-top {
+    padding: 0;
+    margin: 0;
     height: 100vh;
     max-height: 1080px;
-    color: white;
     width: 100%;
+    background: none;
 }
-.image-top h1 {
+.image-top > h1 {
     padding-left: 80px;
     margin-left: 40px;
     padding-top: 130px;
     margin-bottom: 0px;
     margin-top: 0px;
 
-    font-size: 500%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 600%;
+    text-align: left;
 }
 .image-top h2 {
     padding-left: 80px;
@@ -120,8 +117,8 @@ nav > ul > li:last-child {
     margin-top: 0px;
     margin-bottom: 0px;
 
-
     font-size: 400%;
+    text-align: left;
 }
 
 .image-top > button {
@@ -130,7 +127,7 @@ nav > ul > li:last-child {
 
     width: 300px;
     height: 75px;
-    font-size: xx-large;
+    font-size: 200%;
 
     cursor: pointer;
     background-color: #bcb18b;
@@ -147,73 +144,79 @@ main {
     color: white;
 }
 
+/*-------------------------------------*/
+
 section {
     background-color: rgba(63, 89, 126, 0.7);
     padding: 20px 20px 20px 20px;
     margin: 20px 20px 0px 20px;
+
+}
+
+section > h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 250%;
+    text-align: center;
 }
 section > h2 {
-    margin-bottom: 0px;
+    margin: 0;
+    font-size: 200%;
+    text-align: center;
 }
 section > h3 {
-    margin-top: 10px;
-}
-.img {
-    display: flex;
-    justify-content: center;
-}
-
-@keyframes slider {
-    33% {
-        background: url("../img/reviews/2.jpg");
-        background-repeat: no-repeat;
-    }
-    66% {
-        background: url("../img/reviews/3.jpg");
-        background-repeat: no-repeat;
-    }
-    100% {
-        background: url("../img/reviews/1.jpg");
-        background-repeat: no-repeat;
-    }
-}
-section > .section-inside > figure {
-    background-image: url("../img/reviews/1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
     margin: 0;
-    margin-left: 10px;
-    width: 375px;
-    height: 281px;
+    font-size: 175%;
+    text-align: center;
 
-    animation: slider 20s;
-    animation-iteration-count: infinite;
+    margin-bottom: 10px;
+}
+section > h4 {
+    margin: 0;
+    font-size: 160%;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+section > p {
+    font-size: 150%;
+
+    padding-right: 20px;
+    margin: 0;
 }
 
-.reviews > .section-inside {
+/*-------------------------------------*/
+
+.tentoonstellingen {
     display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    justify-items: center;
+    grid-template-areas: 
+    'h1 h1 h1 h1 h1'
+    'h2 h2 h2 h2 h2'
+    'h3 h3 h3 h3 h3'
+    'x x slider slider slider'
+    'p p img img img';
 }
-.reviews > .section-inside > div > .review > h3 {
-    margin: 0;
+.tentoonstellingen > h1 {
+    grid-area: h1;
 }
-.reviews > .section-inside > div > .review > p {
-    margin: 0;
+.tentoonstellingen > h2 {
+    grid-area: h2;
 }
-.reviews > .section-inside > div > .review {
-    border-bottom: 1px solid white;
+.tentoonstellingen > h3 {
+    grid-area: h3;
 }
-.reviews > .section-inside > div > .review:last-child {
-    border-bottom: none;
+.tentoonstellingen > p {
+    grid-area: p;
+    margin-bottom: 20px;
 }
-.review {
-    background: none;
+.tentoonstellingen > img {
+    grid-area: img;
+    max-width: 500px;
+    max-height: 600px;
+    height: auto;
 }
-
-h1 {
-    margin-top: 0px;
+.tentoonstellingen > .slider {
+    grid-area: slider;
 }
 
 @keyframes selector {
@@ -231,11 +234,11 @@ h1 {
     }
 }
 
-#tts-selector {
+.slider {
     display: flex;
     justify-content: center;
 
-    margin: 20px 0 0 0;
+    margin: 10px 0 10px 0;
 }
 #slider-left {
     margin-right: 10px;
@@ -245,303 +248,294 @@ h1 {
     margin-left: 10px;
     cursor: pointer;
 }
-#tts-selector > button {
+.slider > button {
     width: 150px;
-    height: 50px;
+    height: 30px;
     font-size: 125%;
     background-color: #bcb18b;
     border: none;
     color: white;
     animation: selectorReverse 0.5s;
 }
-#tts-selector > button > p {
+.slider > button > p {
     margin: 0;
 }
-#tts-selector > button:hover {
+.slider > button:hover {
     animation: selector 0.5s;
     background-color: #c5c797;
 }
 
-@media screen and (max-height: 1150px) {
-    .image-top h1 {
-        padding-left: 80px;
-        margin-left: 40px;
-        padding-top: 130px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    
-        font-size: 400%;
-    }
-    .image-top h2 {
-        padding-left: 80px;
-        margin-left: 40px;
-        margin-top: 0px;
-    
-    
-        font-size: 300%;
-    }
 
-    section > .section-inside > img {
-        width: auto;
-        height: 300px;
-        padding-left: 10px;
-    }
+.reviews {
+    display: grid;
+    grid-template-areas: 
+    'h1 h1 h1 h1 h1'
+    'r1 r1 r1 r1 r1'
+    'r2 r2 r2 r2 r2'
+    'r3 r3 r3 r3 r3';
+}
+.reviews > h1 {
+    grid-area: h1;
+}
+.reviews > .r1 {
+    grid-area: r1;
+}
+.reviews > .r2 {
+    grid-area: r2;
+}
+.reviews > .r3 {
+    grid-area: r3;
 }
 
-@media screen and (max-height: 650px) {
-    .image-top h1 {
-        padding-top: 100px;
-    }
-    .image-top > button {
-        margin-top: 50px;
-        font-size: x-large;
-    }
+.reviews > section {
+    background: none;
+    border-bottom: solid 2px white;
+    margin: 0px;
+    padding: 0px;
+}
+.reviews > section:last-of-type {
+    border-bottom: none;
 }
 
-@media screen and (max-height: 580px) {
-    main > .image-top > button {
-        visibility: collapse;
-        margin: 0;
-        padding: 0;
-        width: 0;
-        height: 0;
-    }
+.reviews > section > figure {
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (max-width: 1050px) {
+.reviews img {
+    width: 60%;
+    height: auto;
     
+}
+
+.reviewTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.reviewPar {
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info > .container {
+    display: flex;
+
+    text-align: center;
+}
+
+.info > .container > .openTimeContainer {
+    width: 50%;
+}
+.info > .container > .addressContainer {
+    width: 50%;
+}
+.info > .container > div > .openTimeList {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+.info > .container > div > .openTimeList td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.info > .container > div > .addressParagraph {
+    max-width: 35ch;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.tickets > .ticketPriceList {
+    width: 50%;
+    margin: 0 auto;
+}
+.tickets > .ticketPriceList td {
+    width: 50%;
+    text-align: center;
+}
+.tickets > .ticketPriceList > tbody > tr > th {
+    height: 72px;
+}
+
+@media screen and (max-width: 1000px) {
     header {
-        font-size: 70%;
+        font-size: 110%;
+        gap: 40%;
     }
-
-    .image-top h1 {
-        padding-top: 100px;
-    }
-
-    main > .image-top > button {
-        margin-top: 50px;
-    }
-
-}
-
-
-@media screen and (max-width: 950px) {
-
     nav > ul > li {
-        margin-right: 5px;
+        margin-right: 15px;
     }
 
-    section {
-        padding: 0 20px 20px 20px;
-        margin: 20px 20px 0px 20px;
-    }
-    .section-inside {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    section > .section-inside > img {
-        height: 200px;
-    }
 
-    
-
-}
-
-@media screen and (max-width: 780px) {
-    
-    header {
-        font-size: 60%;
-    }
-
-    nav > ul > li {
-        margin-right: 2.5px;
-    }
-
-    .image-top {
-        height: 100vh;
-        max-height: 1080px;
-    }
-    
-    .image-top h1 {
-        padding-left: 40px;
-        margin-left: 20px;
-        padding-top: 190px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    
-        font-size: 350%;
-    }
-    .image-top h2 {
-        padding-left: 40px;
-        margin-left: 20px;
-        margin-top: 0px;
-    
-    
-        font-size: 250%;
-    }
     .image-top > button {
-        margin-left: 60px;
+        margin-top: 60px;
     }
+    
+    
+    .tentoonstellingen > img {
+        max-width: 350px;
+        height: auto;
+    }
+}
 
-    section {
-        padding: 0 20px 20px 20px;
-        margin: 20px 20px 0px 20px;
-    }
-    section > h2 {
+@media screen and (max-width: 800px) {
+    header {
         height: 60px;
+        font-size: 90%;
+        gap: 30%;
     }
-    .section-inside {
-        display: inline;
-        justify-content: center;
-        align-items: center;
+    
+    nav > ul {
+        height: 60px
     }
-    .section-inside > p {
-        height: 200px;
-    }
-    section > .section-inside > img {
+    nav > ul > li > a {
+        color: white;
         display: block;
-        margin: 0 auto;
-        height: 300px;
+        line-height: 60px;
     }
-
 }
+
 
 @media screen and (max-width: 700px) {
 
     header {
-        height: auto;
+        gap: 20%;
     }
 
-    header > nav {
-        margin: 0 auto;
-        width: 30%;
-    }
-
-    header > nav > ul {
+    .tentoonstellingen {
         display: block;
-        margin: 0
     }
-    header > nav > ul > li {
-        height: 30px;
-        margin: 0;
-        padding: 2px;
-    }
-    header > nav > ul > li > a {
+    .tentoonstellingen > p {
+        width: 100%;
         text-align: center;
-        line-height: 30px;
-        padding: 0;
+    }
+    .tentoonstellingen > img {
+        max-width: none;
+        width: 100%;
     }
 
-    
-    nav > ul > li:last-child {
-        height: 50px;
-        margin-right: auto;
-        width: auto;
-    }
 
-    main > .image-top > button {
-        visibility: collapse;
-        width: 0px;
-        height: 0px;
-        padding: 0;
-        margin: 0;
+    .reviews img {
+        width: 100%;
     }
-
-    .image-top h1 {
-        padding-left: 20px;
-        margin-left: 20px;
-        padding-top: 300px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .image-top h2 {
-        padding-left: 20px;
-        margin-left: 20px;
-        margin-top: 0px;
-    }
-    
-    .image-top > button {
-        visibility: collapse;
-    }
-
-    main {
-        font-size: 70%;
-    }
-
-    .section-inside > p {
-        height: 100px;
-    }
-
-    .reviews > .section-inside {
-        display: grid;
-        grid-auto-flow: row;
-        align-items: center;
-        justify-items: center;
-    }
-    .reviews > .section-inside > div > .review > h3 {
-        margin: 0;
-    }
-    .reviews > .section-inside > div > .review > p {
-        margin: 0;
-    }
-    .reviews > .section-inside > div > .review {
-        border-bottom: 1px solid white;
-    }
-    .reviews > .section-inside > div > .review:last-child {
-        border-bottom: none;
-    }
-    
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
+    .mainNavigation > ul {
+        margin-left: 10px;
+    }
+    .mainNavigation > ul > li {
+        margin: 0;
+    }
 
-    
-
-    .image-top h1 {
-        padding-left: 20px;
-        margin-left: 20px;
-        padding-top: 250px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    
+    .image-top > h1 {
+        font-size: 400%;
+    }
+    .image-top > h2 {
         font-size: 300%;
     }
-    .image-top h2 {
-        padding-left: 20px;
-        margin-left: 20px;
-        margin-top: 0px;
-    
-    
-        font-size: 200%;
+
+    .reviews {
+        font-size: 90%;
     }
 
-    section {
-        padding: 0 10px 10px 10px;
-        margin: 10px 10px 0px 10px;
-    }
-    .section-inside {
-        display: inline;
-        justify-content: center;
-        align-items: center;
-    }
-    .section-inside > p {
-        height: 130px;
-    }
-    section > .section-inside > img {
+    .info > .container {
         display: block;
-        margin: 0 auto;
-        height: 250px;
-        padding: 0;
     }
-
+    .info > .container > .openTimeContainer {
+        width: 100%;
+    }
+    .info > .container > .addressContainer {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-height: 600px) {
+    .image-top > h1 {
+        padding-top: 90px;
+    }
 
+    .image-top > button {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: auto;
+        justify-content: center;
+    }
+    .mainNavigation {
+        height: auto;
+    }
+    .mainNavigation > ul {
+        display: block;
+        height: auto;
+    }
+    .mainNavigation > ul > li {
+        padding: 0;
+        margin-bottom: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background:rgba(0, 0, 0, 0.5);
+    }
+    .mainNavigation > ul > li > a {
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .ticketTop {
+        visibility: hidden;
+        display: none;
+    }
+
+    .image-top {
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .image-top > h1 {
+        padding-top: 170px;
+        padding-left: 10px;
+        margin-left: 30px;
+        text-align: left;
+    }
+    .image-top > h2 {
+        margin-left: 30px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    .image-top > button {
+        margin-left: 40px;
+    }
+
+    .info > .title {
+        font-size: 200%;
+    }
     
+}
 
-    .section-inside > p {
-        height: 170px;
+@media screen and (max-height: 450px) {
+    .image-top > h1 {
+        font-size: 400%;
+        padding-top: 80px;
+    }
+    .image-top > h2 {
+        font-size: 350%;
+    }
+
+    .image-top > button {
+        margin-top: 10px;
     }
 }

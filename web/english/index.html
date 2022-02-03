@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
 
-    <title>Van Gogh Museum (dev)</title>
+    <title>Van Gogh Museum</title>
 
     <link rel="stylesheet" href="../styles/style.css">
 
@@ -17,31 +17,25 @@
 <body onload="loadFirstEx(0)"> <!-- Deze functie laadt een bepaalde tentoonstelling als eerste tentoonstelling. Begint bij 0. -->
 
     <header>
-        <nav>
-
-            <!--Om een link als actief aan te duiden, gebruik 'class="active-link"'-->
+        <nav class="mainNavigation">
 
             <ul>
-                <li>
-                    <a href="geschiedenis.html">History</a>
+                <li class="navRoute">
+                    <a href="route.html">Digital Route</a>
                 </li>
-                <li>
-                    <a href="information.html">Visitors info</a>
-                </li>
-                <li>
-                    <a href="route.html">Digital route</a>
-                </li>
-                <li>
+                <li class="navLan">
                     <a href="../index.html" class="language">NL</a>
-                </li>
-                <li>
-                    <a href="#" id="nav-tickets">Tickets</a>
                 </li>
             </ul>
         
         </nav>
 
-        <a href="#" class="logo">
+        
+        <button class="ticketTop" onclick="window.location.href='index.html#tickets'">
+            Tickets
+        </button>
+
+        <a href="index.html#top" class="logo">
             <img src="../img/logo.svg" alt="Logo Van Gogh Museum">
         </a>
 
@@ -49,89 +43,251 @@
 
     <main>
 
-        <div class="image-top">
+        <section id="top" class="image-top">
 
             <h1>Van Gogh Museum</h1>
             <h2>Amsterdam</h2>
 
-            <button>Tickets</button>
+            <button onclick="window.location.href='index.html#tickets'">Tickets</button>
 
-        </div>
+        </section>
 
-        <section>
+        <section class="tentoonstellingen">
 
-            <h1>Huidige tentoonstellingen</h1>
-            <h2 id="tts-title">De 4 Katten</h2>
-            <h3 id="tts-date">18-18-18</h3>
+            <h1>Current exhibitions</h1>
+            <h2 id="tts-title">Name</h2>
+            <h3 id="tts-date">Date</h3>
 
-            <div class="section-inside" id="tentoonstellingen">
-
-                <p id="tts-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Erat velit scelerisque in dictum non consectetur a erat nam. 
-                    Lectus nulla at volutpat diam. At auctor urna nunc id cursus metus aliquam eleifend mi. 
-                    Cras pulvinar mattis nunc sed blandit libero volutpat sed cras.
-                </p>
-
-                <img src="https://placekitten.com/1920/1080" id="tts-image" alt="Foto van een van de tentoonstellingen">
-
-            </div>
-
-            <div id="tts-selector">
+            <div class="slider" id="tts-selector">
                 <button id="slider-left" onclick="changeExhibition(0)">
-                    <p><</p>
+                    &lt;
                 </button>
                 <button id="slider-right" onclick="changeExhibition(1)">
-                    <p>></p>
+                    >
                 </button>
             </div>
+
+            <p id="tts-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque ipsum tempore, neque dignissimos molestias iusto numquam illo! Totam, ullam. Illo in voluptatum eaque dolores. Obcaecati laboriosam rerum assumenda repellat.</p>
+            
+            <img id="tts-image" src="https://placekitten.com/500/500" alt="Placeholder">
 
         </section>
 
         <section class="reviews">
 
-            <h1>Reviews</h1>
+            <h1>
+                Reviews
+            </h1>
 
-            <div class="section-inside">
-                <div>
-                    <section class="review">
-                        <h3>Jurian Heijink</h3>
-                        <p>★★★★☆</p>
-                        <p>
-                            Beautiful museum, gorgeous building at a marvelous location. Beautiful story about Van Gogh, his friends and his family.
-                            Really well done. And, there's also some nice paintings to see ;)
-                        </p>
-                    </section>
-                    <section class="review">
-                        <h3>Niek van Bloem</h3>
-                        <p>★★★★★</p>
-                        <p>
-                            Incredible museum. Compact, interesting and a journey through Vincent's life with his masterpieces,
-                            his studies, his sketches and his letters.
-                        </p>
-                    </section>
-                    <section class="review">
-                        <h3>Jan-Jaap Dufour</h3>
-                        <p>★★★★★</p>
-                        <p>
-                            A visit to the Van Gogh Museum feels like coming home every time I visit.
-                            So familiar, and still every time a new source of inspiration. Every visit is special.
-                        </p>
-                    </section>
-                </div>
+            <section class="r1">
 
-                <figure>
-                    
+                <h2 class="reviewTitle">
+                    Beauty, comfort, stillness, wonder...
+                </h2>
+                <h3 class="reviewScore">★★★★★</h3>
+                <h4>Ton Windmuller</h4>
+                <p class="reviewPar">
+                    Calmness in my mind, but also ideas, insights and inspiration to get through life.
+                </p>
+
+                <figure class="img-wrapper">
+                    <img src="http://images.adsttc.com/media/images/55e6/f619/e58e/ce03/1300/0374/large_jpg/PORTADA_06_VanGoghMuseum_EntranceBuilding_HansvanHeeswijkArchitects_photo_RonaldTilleman.jpg?1441199623" alt="Foto van het museum van buiten">
                 </figure>
 
+            </section>
+            <section class="r2">
+
+                <h2 class="reviewTitle">
+                    Beautiful museum, gorgeous building at a nice location
+                </h2>
+                <h3 class="reviewScore">★★★★★</h3>
+                <h4>Ivo H.</h4>
+                <p class="reviewPar">
+                    Beautiful story about Van Gogh and his friends & family. Really well done. And there are also some paintings that are worth looking at ;)
+                </p>
+            
+                <figure class="img-wrapper">
+                    <img src="https://i1.wp.com/www.objekt-international.com/wp-content/uploads/2015/09/JLOUSBERG__d4_3088_web.jpg" alt="Foto van de tuin, buiten bij het museum">
+                </figure>
+
+            </section>
+            <section class="r3">
+
+                <h2 class="reviewTitle">
+                    A visit to the Van Gogh Museum keeps feeling like coming home
+                </h2>
+                <h3 class="reviewScore">★★★★★</h3>
+                <h4>José van der Ploeg</h4>
+                <p class="reviewPar">
+                    So familiar and yet always new inspiration to gain. Every visit is special.
+                </p>
+            
+                <figure class="img-wrapper">
+                    <img src="https://conscioustravelguide.com/wp-content/uploads/Van-Gogh-Museum_Shop-register_Photo-by-Conscious-Travel-Guide-Amsterdam.jpg" alt="Foto van de souvenir winkel in het museum">
+                </figure>
+
+            </section>
+
+        </section>
+
+        <section class="info">
+
+            <h1 class="title">Visitors info</h1>
+
+            <div class="container">
+                <div class="openTimeContainer">
+                    <h2 class="openTime">Opening hours</h2>
+                    
+                    <table class="openTimeList">
+                        
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <b>Monday</b>
+                                </td>
+                                <td>
+                                    Closed
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Tuesday</b>
+                                </td>
+                                <td>
+                                    10:00-17:00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Wednesday</b>
+                                </td>
+                                <td>
+                                    10:00-17:00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Thursday</b>
+                                </td>
+                                <td>
+                                    10:00-17:00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Friday</b>
+                                </td>
+                                <td>
+                                    10:00-18:00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Saturday</b>
+                                </td>
+                                <td>
+                                    10:00-18:00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Sunday</b>
+                                </td>
+                                <td>
+                                    10:00-18:00
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                
+
+                <div class="addressContainer">
+                    <h2 class="address">Address</h2>
+
+                    <p class="addressParagraph">
+                        Visit the Van Gogh Museum at: Museumplein 6, 1071DJ, Amsterdam.
+                    </p>
+
+                    <h2>Accessibility</h2>
+                    <p>
+                        The museum is accessible for both people with a visible disability as people with an invisible disability, like stimulus sensitivity, dementia or PTSD. Stimulus sensitive visitors can make themself recognizable by wearing the aknowledged Sunflower Keycord.
+                    </p>
+                </div>
             </div>
+
+        </section>
+
+        <section id="tickets" class="tickets">
+
+            <h1 class="title">Tickets</h1>
+
+            <h2 class="priceList">Prices</h2>
+
+            <table class="ticketPriceList">
+
+                <tbody>
+
+                    <tr>
+                        <td><b>Adults</b></td>
+                        <td>€19,-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Youth (under 18 years old)</b></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><b>CJP-pass</b></td>
+                        <td>€9,-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Students (valid Monday till Friday)</b></td>
+                        <td>€10,-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Museumkaart</b></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><b>Vincent's Friends</b></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><b>Vriendenloterij VIP-CARD</b></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><b>ICOM-card</b></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><b>Rembrandtcard</b></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><b>Citypass</b></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <button class="buyTickets" onclick="window.location.href='https://tickets.vangoghmuseum.nl/?promo_creative=button&promo_pos=www-vgm&promo_name=tickets&promo_id=www-vgm-tickets-button'">Koop nu je tickets</button>
+                        </th>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            
 
         </section>
 
     </main>
     
-    <script src="scripts/slider.js"></script>
+    <script src="../scripts/slider-en.js"></script>
 
 </body>
 
